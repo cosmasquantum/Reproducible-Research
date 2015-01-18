@@ -96,7 +96,7 @@ for (i in 1:m){
 
 ```r
 h <- tapply(data3$steps, data3$date, FUN=sum)
-hist(h,xlab = "Total number of steps", main="Total number of steps per day")
+hist(h,xlab = "Total number of steps", col = "red", main="Total number of steps per day")
 ```
 
 ![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png) 

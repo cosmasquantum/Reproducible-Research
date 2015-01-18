@@ -64,7 +64,7 @@ for (i in 1:m){
 -  Histogram of the total number of steps taken each day
 ```{r fig.width=7, fig.height=6, echo = TRUE}
 h <- tapply(data3$steps, data3$date, FUN=sum)
-hist(h,xlab = "Total number of steps", main="Total number of steps per day")
+hist(h,xlab = "Total number of steps", col = "red", main="Total number of steps per day")
 ```
 
 -  Mean and median total number of steps taken per day
