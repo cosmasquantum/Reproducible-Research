@@ -122,7 +122,7 @@ We observe that including the missing values has an impact on the median. Specif
 
 ### Are there differences in activity patterns between weekdays and weekends?
 
--  Create a new factor variable in the dataset with two levels ??? ???weekday??? and ???weekend??? indicating whether a given date is a weekday or weekend day.
+-  Creating a new variable in the dataset with two levels 'weekday' and 'weekend' indicating whether a given date is a weekday or weekend day.
 
 ```r
 days <- weekdays(as.Date(data3$date))
@@ -139,7 +139,7 @@ for (i in 1:n){
 data3 <- cbind(data3,add)
 ```
 
--  Panel plot containing a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis)
+-  Panel plot containing a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis)
 
 ```r
 dataWeekday <- data3[data3$add=="weekday",] 

@@ -305,7 +305,7 @@ hist(h,xlab = &quot;Total number of steps&quot;, col = &quot;red&quot;, main=&qu
 <h3>Are there differences in activity patterns between weekdays and weekends?</h3>
 
 <ul>
-<li> Create a new factor variable in the dataset with two levels ??? ???weekday??? and ???weekend??? indicating whether a given date is a weekday or weekend day.</li>
+<li> Creating a new variable in the dataset with two levels &#39;weekday&#39; and &#39;weekend&#39; indicating whether a given date is a weekday or weekend day.</li>
 </ul>
 
 <pre><code class="r">days &lt;- weekdays(as.Date(data3$date))
@@ -323,7 +323,7 @@ data3 &lt;- cbind(data3,add)
 </code></pre>
 
 <ul>
-<li> Panel plot containing a time series plot (i.e. type = &ldquo;l&rdquo;) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis)</li>
+<li> Panel plot containing a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis)</li>
 </ul>
 
 <pre><code class="r">dataWeekday &lt;- data3[data3$add==&quot;weekday&quot;,] 
